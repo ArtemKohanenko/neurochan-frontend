@@ -1,0 +1,13 @@
+html {
+    background-color: $color-background;
+    font-family: $font-main;
+}
+
+a {
+    color: $color-text-link;
+}
+
+a:hover {
+    color: $color-text-link-hover;
+    cursor: pointer;
+}
