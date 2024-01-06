@@ -1,0 +1,19 @@
+@import 'src/styles';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .boardLink {
+        font-size: $typography-header-xs-font-size;
+        font-weight: 700;
+    }
+
+    .createLink {
+        font-size: $typography-subtitle-font-size;
+    }
+}

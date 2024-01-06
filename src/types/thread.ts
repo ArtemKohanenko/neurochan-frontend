@@ -1,9 +1,22 @@
 export interface IPost {
-    id: number,
-    date: Date,
+    postId: number,
+    date: string,
     text: string
 }
 
-export interface IThread extends IPost {
-    replies?: number[];
+export interface ICreatePost {
+    text: string
 }
+
+export interface IThread {
+    threadId: number,
+    date: string,
+    text: string,
+    lastActivityDate: Date,
+    posts: number[],
+    lastPosts: IPost[]
+}
+
+export interface ICreateThread {
+    text: string;
+  }

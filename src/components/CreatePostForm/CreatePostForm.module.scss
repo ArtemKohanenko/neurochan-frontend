@@ -1,0 +1,27 @@
+@import 'src/styles';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    .textArea {
+        width: 450px;
+        height: 180px;
+    }
+
+    .sendButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 100px;
+        background-color: #eaeaea;
+        
+
+        .text {
+            color: $color-text-primary;
+            font-size: $typography-primary-font-size;
+        }
+    }
+}

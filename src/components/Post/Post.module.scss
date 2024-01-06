@@ -1,0 +1,33 @@
+@import 'src/styles';
+
+.wrapper {
+    background-color: $color-post-background;
+    border-radius: 4px;
+    width: fit-content;
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        gap: 10px;
+        min-width: 400px;
+
+        .head {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+
+            .headText {
+                font-size: $typography-primary-font-size;
+                color: $color-text-secondary;
+            }
+        }
+
+        .text {
+            font-size: $typography-primary-font-size;
+            color: $color-text-primary;
+            margin-left: 20px;
+        }
+    }
+}

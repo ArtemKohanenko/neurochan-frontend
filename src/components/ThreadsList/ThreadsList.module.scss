@@ -9,11 +9,62 @@
     .threadContainer {
         
         .divider {
-            background-color: #E3E3E3;
+            background-color: #d1d1d1;
             height: 1px;
             width: 100%;
             margin-top: 20px;
             margin-bottom: 20px;
+        }
+
+        .replyElements {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+    
+            .replies {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+        
+                .replyLink {
+                    font-size: $typography-primary-font-size;
+                }
+            }
+    
+            .expandString {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+    
+                .expandButton {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0;
+                    border: none;
+                    width: 18px;
+                    height: 18px;
+                    background-color: $color-icon-background;
+                    border-radius: 2px;
+    
+                    .expandIcon {
+                        width: 14px;
+                        height: 14px;
+                        color: $color-icon;
+                    }
+                }
+    
+                .expandButton:hover {
+                    background-color: $color-icon-background-hover;
+                    cursor: pointer;
+                }
+    
+                .text {
+                    font-size: $typography-primary-font-size;
+                    color: $color-text-secondary;
+                }
+            }
         }
     }
 }
