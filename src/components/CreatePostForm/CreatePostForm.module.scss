@@ -8,16 +8,35 @@
     .textArea {
         width: 450px;
         height: 180px;
+        border: 1px solid $color-text-secondary;
     }
 
-    .sendButton {
+    .row {
         display: flex;
-        justify-content: center;
         align-items: center;
-        height: 30px;
-        width: 100px;
-        background-color: #eaeaea;
-        
+        flex-direction: row;
+        gap: 10px;
+
+        .sendButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            width: 100px;
+            background-color: #eaeaea;
+            border: 1px solid $color-text-secondary;
+            
+    
+            .text {
+                color: $color-text-primary;
+                font-size: $typography-primary-font-size;
+            }
+        }
+    
+        .check {
+            height: 25px;
+            width: 25px;
+        }
 
         .text {
             color: $color-text-primary;

@@ -18,4 +18,4 @@ const PostsList = (props: {posts: IPost[]}) => {
   )
 }
 
-export default observer(PostsList)
+export default PostsList

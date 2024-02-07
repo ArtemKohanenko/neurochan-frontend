@@ -13,7 +13,7 @@ const MainButtons = () => {
   return (
     <>
       <div className={classes.container}>
-        <a className={classes.boardLink}>Бред</a>
+        <a className={classes.boardLink}>Neurochan</a>
         <a className={classes.createLink} onClick={createLinkHandler}>{isFormShow ? 'Закрыть форму постинга' : 'Создать тред'}</a>
         <CreateThreadForm isShow={isFormShow}/>
       </div>

@@ -8,6 +8,7 @@
     .textArea {
         width: 450px;
         height: 180px;
+        border: 1px solid $color-text-secondary;
     }
 
     .sendButton {
@@ -17,6 +18,7 @@
         height: 30px;
         width: 100px;
         background-color: #eaeaea;
+        border: 1px solid $color-text-secondary;
         
 
         .text {

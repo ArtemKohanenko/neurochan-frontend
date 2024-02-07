@@ -45,6 +45,7 @@ class ThreadsStore {
         } finally {
             runInAction(() => {
                 this.loading = false;
+                this.loadThreads(10)
             });
         }
     }

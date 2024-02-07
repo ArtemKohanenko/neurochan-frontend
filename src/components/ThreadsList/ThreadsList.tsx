@@ -17,7 +17,7 @@ const ThreadsList = () => {
           threads.map((thread) => {
             return <div className={classes.threadContainer} key={thread.threadId}>
               <Thread thread={thread} key={thread.threadId}/>
-              {thread.posts.length > 0 ? 
+              {thread.posts && thread.posts.length > 0 ? 
                 <div className={classes.replyElements}>
                   <div className={classes.expandString}>
                     <button className={classes.expandButton}>

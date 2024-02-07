@@ -5,7 +5,8 @@ export interface IPost {
 }
 
 export interface ICreatePost {
-    text: string
+    text: string,
+    isRequireReply: boolean
 }
 
 export interface IThread {
@@ -13,10 +14,11 @@ export interface IThread {
     date: string,
     text: string,
     lastActivityDate: Date,
-    posts: number[],
+    posts?: number[],
     lastPosts: IPost[]
 }
 
 export interface ICreateThread {
-    text: string;
+    text: string,
+    isRequireReply?: boolean
   }

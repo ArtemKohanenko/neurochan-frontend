@@ -1,7 +1,6 @@
 @import 'src/styles';
 
 .wrapper {
-    background-color: $color-post-background;
     border-radius: 4px;
     width: fit-content;
 
@@ -10,7 +9,8 @@
         display: flex;
         flex-direction: column;
         padding: 5px;
-        gap: 10px;
+        padding-right: 50px;
+        gap: 20px;
         min-width: 400px;
 
         .head {
@@ -27,7 +27,31 @@
         .text {
             font-size: $typography-primary-font-size;
             color: $color-text-primary;
+            margin: 0;
             margin-left: 20px;
         }
+
+        .links {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            margin-left: 20px;
+
+            .link {
+                font-size: $typography-primary-font-size;
+            }
+        }
     }
+
+    .answerPost {
+        
+    }
+}
+
+.unselected {
+    background-color: $color-post-background;
+}
+
+.selected {
+    background-color: $color-post-selected-background;
 }

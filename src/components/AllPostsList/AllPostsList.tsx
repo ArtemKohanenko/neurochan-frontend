@@ -8,13 +8,16 @@ import { useEffect } from 'react'
 import postsStore from '../../stores/PostsStore'
 import { observer } from 'mobx-react-lite'
 
+
 function AllPostsList() {
 
-  const { loading, posts } = postsStore;
+  const { posts } = postsStore;
 
   return (
     <>
-      { posts.length > 0 ? <PostsList posts={posts}/> : null}
+      <div>
+        { posts.length > 0 ? <PostsList posts={posts}/> : null}
+      </div>
     </>
   )
 }

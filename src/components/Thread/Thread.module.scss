@@ -3,7 +3,12 @@
 .container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    border-radius: 4px;
+    gap: 25px;
+    width: 700px;
+    padding: 5px;
+    padding-right: 50px;
+    padding-bottom: 20px;
 
     .head {
         display: flex;
@@ -23,5 +28,21 @@
     .text {
         font-size: $typography-primary-font-size;
         color: $color-text-primary;
+        margin: 0;
     }
+
+    .links {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-left: 20px;
+
+        .link {
+            font-size: $typography-primary-font-size;
+        }
+    }
+}
+
+.selected {
+    background-color: $color-post-selected-background;
 }

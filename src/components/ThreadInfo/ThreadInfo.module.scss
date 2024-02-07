@@ -1,0 +1,11 @@
+@import 'src/styles';
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    .text {
+        font-size: $typography-primary-font-size;
+    }
+}
