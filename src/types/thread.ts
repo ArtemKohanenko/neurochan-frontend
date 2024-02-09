@@ -20,5 +20,6 @@ export interface IThread {
 
 export interface ICreateThread {
     text: string,
+    captchaValue: string,
     isRequireReply?: boolean
   }
