@@ -15,6 +15,7 @@ const CreatePostForm = (props: {threadId: number, isShow: boolean}) => {
   const sendFormHandler = () => {
     postsStore.addPost(props.threadId, {text: text, isRequireReply: isRequireReply, captchaValue: captchaValue})
     setText('');
+    captcha?.reset();
     setIsRequireReply(false);
   }
 
