@@ -6,7 +6,8 @@ export interface IPost {
 
 export interface ICreatePost {
     text: string,
-    isRequireReply: boolean
+    isRequireReply: boolean,
+    captchaValue: string
 }
 
 export interface IThread {
@@ -20,5 +21,6 @@ export interface IThread {
 
 export interface ICreateThread {
     text: string,
+    captchaValue: string,
     isRequireReply?: boolean
   }

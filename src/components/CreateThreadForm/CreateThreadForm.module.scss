@@ -3,6 +3,7 @@
 .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 3px;
 
     .textArea {
@@ -11,19 +12,27 @@
         border: 1px solid $color-text-secondary;
     }
 
-    .sendButton {
+    .sendContainer{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 30px;
-        width: 100px;
-        background-color: #eaeaea;
-        border: 1px solid $color-text-secondary;
-        
+        flex-direction: column;
+        align-items: start;
+        width: 450px;
+        gap: 5px;
 
-        .text {
-            color: $color-text-primary;
-            font-size: $typography-primary-font-size;
+        .sendButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            width: 100px;
+            background-color: #eaeaea;
+            border: 1px solid $color-text-secondary;
+            
+    
+            .text {
+                color: $color-text-primary;
+                font-size: $typography-primary-font-size;
+            }
         }
     }
 }
